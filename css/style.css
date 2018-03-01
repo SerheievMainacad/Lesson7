@@ -1,6 +1,11 @@
 *{
 	margin: 0;
 }
+
+body{
+	
+	width: 100%;
+}
 #wrapper{
 	width: 100%;
 	height: 400px;
@@ -22,4 +27,37 @@
 	width: 50%;
 	background-color: red;
 	clear: both;
+}
+
+/*hover*/
+.outerButton{
+	width: 100%;
+	height: 400px;
+	background-color: lightgreen;
+	transition: all .5s;
+}
+.outerButton .button{
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: lightblue;
+	margin: 100px auto;
+	transition: all 1s;
+	transform: skew(0deg);
+}
+.outerButton:hover{
+	background-color: orange;
+}
+.outerButton:hover .button{	
+	transform: rotateX(90deg) translate(100px) rotateY(30deg);
+	cursor: crosshair;/*pointer, wait, crosshair, */
+	/*width: 150px;
+	height: 100px;
+	line-height: 100px;
+	background-color: red;*/
+	/*transform: scale(2,2);scaleX(n), scaleY(n), scaleZ(n), scale(n,n)*/
+	/*transform: rotateZ(90deg);rotateX, rotateY, rotateZ,*/
+	/*transform: skew(180deg); skewX(),skewY*/ 
+	/*transform: skew(0deg);*/
 }
